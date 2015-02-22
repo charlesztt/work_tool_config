@@ -27,6 +27,7 @@
  ;; If there is more than one, they won't work right.
  )
 (global-wakatime-mode)
+(global-linum-mode)
 (setq
     backup-by-copying t
     backup-directory-alist
