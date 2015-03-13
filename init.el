@@ -18,8 +18,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(wakatime-api-key "")
- '(wakatime-cli-path ""))
+ '(wakatime-api-key "go to website")
+ '(wakatime-cli-path "which waka"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
