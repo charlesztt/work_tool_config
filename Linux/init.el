@@ -1,9 +1,3 @@
-;; This is the Aquamacs Preferences file.
-;; Add Emacs-Lisp code here that should be executed whenever
-;; you start Aquamacs Emacs. If errors occur, Aquamacs will stop
-;; evaluating this file and print errors in the *Messags* buffer.
-;; Use this file in place of ~/.emacs (which is loaded as well.)
-
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq-default TeX-master nil)
@@ -24,8 +18,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(wakatime-api-key "xxxx")
- '(wakatime-cli-path "xxx"))
+ '(wakatime-api-key "go to website")
+ '(wakatime-cli-path "/usr/local/bin/wakatime"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -42,4 +36,3 @@
     kept-new-versions 6 
     kept-old-versions 2
     version-control t)
-(set-frame-font "Menlo-18" nil t)
