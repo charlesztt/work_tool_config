@@ -30,7 +30,7 @@
  '(ns-tool-bar-size-mode (quote regular) t)
  '(text-mode-hook (quote (smart-spacing-mode)))
  '(visual-line-mode t t)
- '(wakatime-api-key "bc52447e-f91f-455e-9ad2-5f1d1d095f12")
+ '(wakatime-api-key "go to website")
  '(wakatime-cli-path "/usr/local/bin/wakatime")
  '(word-wrap t))
 (custom-set-faces
