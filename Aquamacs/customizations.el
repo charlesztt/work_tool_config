@@ -9,7 +9,8 @@
  '(global-linum-mode t)
  '(ns-tool-bar-display-mode (quote both) t)
  '(ns-tool-bar-size-mode (quote regular) t)
- '(visual-line-mode nil t)
+ '(display-battery-mode t)
+ '(display-time-mode t)
  '(wakatime-api-key "[blocked]")
  '(wakatime-cli-path
    "[github_folder]/wakatime/wakatime/cli.py"))
