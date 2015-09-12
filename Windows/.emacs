@@ -5,19 +5,19 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
+(global-wakatime-mode t)
+(global-linum-mode t)
+(global-visual-line-mode t)
+(display-battery-mode t)
+(display-time-mode t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(display-battery-mode t)
- '(display-time-mode t)
  '(wakatime-api-key "[blocked]")
  '(wakatime-cli-path "C:/Python34/Lib/site-packages/wakatime-4.1.4-py3.4.egg/wakatime/cli.py")
  '(wakatime-python-bin "C:/Python34/python.exe"))
-(global-wakatime-mode)
-(global-linum-mode)
-(global-visual-line-mode t)
 (setq
     backup-by-copying t
     backup-directory-alist

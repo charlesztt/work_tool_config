@@ -12,14 +12,14 @@
 (package-initialize)
 (global-linum-mode t)
 (global-visual-line-mode t)
-(global-wakatime-mode)
+(global-wakatime-mode t)
+(display-battery-mode t)
+(display-time-mode t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(display-battery-mode t)
- '(display-time-mode t)
  '(wakatime-api-key "[blocked]")
  '(wakatime-cli-path "[github_folder]/wakatime/wakatime/cli.py"))
 (custom-set-faces
