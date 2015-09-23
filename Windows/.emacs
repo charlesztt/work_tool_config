@@ -8,6 +8,7 @@
 (global-wakatime-mode t)
 (global-linum-mode t)
 (global-visual-line-mode t)
+(tabbar-mode t)
 (display-battery-mode t)
 (display-time-mode t)
 (custom-set-variables
