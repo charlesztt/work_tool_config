@@ -1,11 +1,8 @@
+(setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin"))
+(setq exec-path (append exec-path '("/Library/TeX/texbin")))
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq-default TeX-master nil)
-(getenv "PATH")
- (setenv "PATH"
-(concat
- "/Library/Tex/texbin" ":"
-(getenv "PATH")))
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
@@ -16,6 +13,7 @@
 (tabbar-mode t)
 (display-battery-mode t)
 (display-time-mode t)
+(setq-default ispell-program-name "/usr/local/bin/aspell")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

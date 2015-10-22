@@ -5,12 +5,13 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
-(global-wakatime-mode t)
 (global-linum-mode t)
 (global-visual-line-mode t)
+(global-wakatime-mode t)
 (tabbar-mode t)
 (display-battery-mode t)
 (display-time-mode t)
+(setq-default ispell-program-name "[setlater]]")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
