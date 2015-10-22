@@ -1,0 +1,2 @@
+M-x flyspell-mode
+M-x package-list-packages
