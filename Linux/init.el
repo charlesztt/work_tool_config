@@ -5,10 +5,16 @@
  (setenv "PATH"
 (concat
  "/usr/texbin" ":"
-(getenv "PATH")))
+ (getenv "PATH")))
+(when
+    (load
+     (expand-file-name "~/.emacs.d/package.el")))
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 (global-linum-mode t)
 (global-visual-line-mode t)

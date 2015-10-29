@@ -1,2 +1,3 @@
 M-x flyspell-mode
 M-x package-list-packages
+M-x neotree-maybe-turn-on
