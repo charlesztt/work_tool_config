@@ -17,6 +17,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(fancy-splash-image "kancolle.png")
  '(wakatime-api-key "[blocked]")
  '(wakatime-cli-path "C:/Python34/Lib/site-packages/wakatime-4.1.4-py3.4.egg/wakatime/cli.py")
  '(wakatime-python-bin "C:/Python34/python.exe"))
