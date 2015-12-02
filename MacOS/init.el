@@ -34,7 +34,7 @@
  (dolist (charset '(kana han symbol cjk-misc bopomofo))
    (set-fontset-font (frame-parameter nil 'font)
                      charset (font-spec :family "STFangsong"
-                                        :size 18)))
+                                        :size 22)))
 (setq
          backup-by-copying t
          backup-directory-alist
