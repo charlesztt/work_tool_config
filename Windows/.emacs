@@ -26,7 +26,14 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
-  '(default ((t (:family "FangSong" :foundry "outline" :background "#d4fc9b" :slant normal :weight normal :height 181 :width normal)))))
+  '(default ((t (:background "#d4fc9b")))))
+ ;; Setting English Font
+ (set-face-attribute 'default nil :font "Courier 18")
+ ;; Chinese Font
+ (dolist (charset '(kana han symbol cjk-misc bopomofo))
+   (set-fontset-font (frame-parameter nil 'font)
+                     charset (font-spec :family "Fangsong"
+                                        :size 18)))
 (setq
     backup-by-copying t
     backup-directory-alist
