@@ -31,12 +31,11 @@
   ;; If there is more than one, they won't work right.
   '(default ((t (:background "#d4fc9b")))))
  ;; Setting English Font
- (set-face-attribute 'default nil :font "Courier New 18")
+ (set-face-attribute 'default nil :font "Courier New 16")
  ;; Chinese Font
  (dolist (charset '(kana han symbol cjk-misc bopomofo))
    (set-fontset-font (frame-parameter nil 'font)
-                     charset (font-spec :family "Microsoft YaHei"
-                                        :size 22)))
+                     charset (font-spec :family "FangSong" :size 24)))
 (setq
     backup-by-copying t
     backup-directory-alist
