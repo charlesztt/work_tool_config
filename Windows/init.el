@@ -35,7 +35,8 @@
  ;; Chinese Font
  (dolist (charset '(kana han symbol cjk-misc bopomofo))
    (set-fontset-font (frame-parameter nil 'font)
-                     charset (font-spec :family "FangSong" :size 24)))
+                     charset (font-spec :family "FangSong"
+                                        :size 24)))
 (setq
     backup-by-copying t
     backup-directory-alist
