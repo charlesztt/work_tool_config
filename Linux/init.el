@@ -16,6 +16,7 @@
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
+(global-unset-key (kbd "C-z"))
 (global-linum-mode t)
 (global-visual-line-mode t)
 (global-wakatime-mode t)
