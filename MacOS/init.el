@@ -7,6 +7,7 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
+(global-unset-key (kbd "C-z"))
 (global-linum-mode t)
 (global-visual-line-mode t)
 (global-wakatime-mode t)
