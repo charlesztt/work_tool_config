@@ -12,7 +12,7 @@
 (tabbar-mode t)
 (display-battery-mode t)
 (display-time-mode t)
-(setq-default ispell-program-name "[setlater]]")
+(setq-default ispell-program-name "[setlater]")
 (setq fancy-startup-text
 '(((lambda ()
     "write down anything you like"))))
