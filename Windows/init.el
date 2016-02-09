@@ -1,3 +1,4 @@
+(setq exec-path (append exec-path '("C:/Program Files (x86)/PuTTY/")))
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq-default TeX-master nil)
