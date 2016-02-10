@@ -1,5 +1,5 @@
 /* XPM */
-static char *Free_Converter_com_nva_47631102[] = {
+static char *nva[] = {
 /* columns rows colors chars-per-pixel */
 "287 280 256 2 ",
 "   c #000000",
