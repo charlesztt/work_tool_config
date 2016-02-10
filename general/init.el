@@ -23,17 +23,17 @@
  version-control t)
 ;; Set the fonts
 ;; Set English font
-(set-face-attribute 'default nil :font "Menlo 16") ;; For Windows "Courier New 16"
+(set-face-attribute 'default nil :font "Menlo 18") ;; For Windows "Courier New 16"
 ;; Set Chinese font
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
 		    charset (font-spec :family "STFangSong"
 				       :size 22))) ;; For Windows "Fangsong" 24
-;; Set the backgrounds
+;; Set the background color
 (custom-set-faces
  '(default ((t (:background "#c7edcc")))))
- ;; Spell checker (Don't forget to install aspell)
- (setq-default ispell-program-name "/usr/local/bin/aspell")
+;; Spell checker (Don't forget to install aspell)
+(setq-default ispell-program-name "/usr/local/bin/aspell")
 
 ;; Step 2: Package
 ;; If you are using Linux whose Emacs version is below 24, download package.el, and add the following codes
