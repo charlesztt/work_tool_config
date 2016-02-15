@@ -34,6 +34,9 @@
  '(default ((t (:background "#c7edcc")))))
 ;; Spell checker (Don't forget to install aspell)
 (setq-default ispell-program-name "/usr/local/bin/aspell")
+;; Set hooks for auto spell check
+(add-hook 'org-mode-hook 'flyspell-buffer)
+(add-hook 'org-mode-hook 'turn-on-flyspell)
 
 ;; Step 2: Package
 ;; If you are using Linux whose Emacs version is below 24, download package.el, and add the following codes
@@ -72,6 +75,8 @@
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq-default TeX-master nil)
+(add-hook 'LaTeX-mode-hook 'flyspell-buffer)
+(add-hook 'LaTeX-mode-hook 'turn-on-flyspell)
 
 ;; Jedi
 (add-hook 'python-mode-hook 'jedi:setup)
