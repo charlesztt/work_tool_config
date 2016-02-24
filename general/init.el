@@ -82,3 +82,4 @@
 ;; org-mode
 (add-hook 'org-mode-hook 'flyspell-buffer)
 (add-hook 'org-mode-hook 'turn-on-flyspell)
+(setq org-log-done 'time)
