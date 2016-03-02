@@ -23,7 +23,7 @@
  version-control t)
 ;; Set the fonts
 ;; Set English font
-(set-face-attribute 'default nil :font "Menlo 18") ;; For Windows "Courier New 16"
+(set-face-attribute 'default nil :font "Menlo 18") ;; For Windows "Consolas 16"
 ;; Set Chinese font
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
