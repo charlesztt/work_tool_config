@@ -55,7 +55,7 @@
 (setq exec-path (append exec-path '("/Library/TeX/texbin"))) ;; This line may be written for multiple times
 (custom-set-variables
  ;; use the following line if you are in Windows
- ;; '(wakatime-python-bin "C:/Python34/python.exe")
+ ;; '(wakatime-python-bin "C:/Python27/python.exe")
  '(wakatime-api-key "xxx")
  '(wakatime-cli-path "/wakatime/cli.py"))
 
