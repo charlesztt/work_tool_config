@@ -75,9 +75,13 @@
 (add-hook 'LaTeX-mode-hook 'flyspell-buffer)
 (add-hook 'LaTeX-mode-hook 'turn-on-flyspell)
 
-;; Jedi
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
+;; company
+(add-hook 'after-init-hook 'global-company-mode)
+
+;; company-jedi
+(defun my/python-mode-hook ()
+  (add-to-list 'company-backends 'company-jedi))
+(add-hook 'python-mode-hook 'my/python-mode-hook)
 
 ;; org-mode
 (add-hook 'org-mode-hook 'flyspell-buffer)
