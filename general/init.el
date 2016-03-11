@@ -3,6 +3,7 @@
 ;; Unset Ctrl-z
 (global-unset-key (kbd "C-z"))
 (global-unset-key (kbd "C-x C-z"))
+(global-unset-key (kbd "C-x C-c"))
 ;; Show line numbers
 (global-linum-mode t)
 ;; Word wrap
