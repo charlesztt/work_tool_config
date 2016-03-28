@@ -79,11 +79,6 @@
 ;; company
 (add-hook 'after-init-hook 'global-company-mode)
 
-;; company-jedi
-(defun my/python-mode-hook ()
-  (add-to-list 'company-backends 'company-jedi))
-(add-hook 'python-mode-hook 'my/python-mode-hook)
-
 ;; org-mode
 (add-hook 'org-mode-hook 'flyspell-buffer)
 (add-hook 'org-mode-hook 'turn-on-flyspell)
