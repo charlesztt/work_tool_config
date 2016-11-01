@@ -60,9 +60,9 @@
  '(wakatime-api-key "xxx")
  '(wakatime-cli-path "/wakatime/cli.py"))
 
-;; wakatime:
+;; wakatime
 (global-wakatime-mode t)
-;; Don't forget to go back to the line above
+;; Don't forget to go back to the line above, and also write config file under emacs's ~ path in Windows
 
 ;; neotree
 

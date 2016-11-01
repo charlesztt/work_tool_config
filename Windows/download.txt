@@ -1,0 +1,1 @@
+Download gnutls for windows copy all files from bin folder to emacs bin folder
