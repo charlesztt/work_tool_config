@@ -62,7 +62,7 @@
 
 ;; wakatime
 (global-wakatime-mode t)
-;; Don't forget to go back to the line above, and also write config file under emacs's ~ path in Windows
+;; Don't forget to go back to the line above, and also write config file under emacs's ~ (windows) or home/username (unix-like)
 
 ;; neotree
 
