@@ -57,7 +57,6 @@
 (custom-set-variables
  ;; use the following line if you are in Windows
  ;; '(wakatime-python-bin "C:/Python27/python.exe")
- '(wakatime-api-key "xxx")
  '(wakatime-cli-path "/wakatime/cli.py"))
 
 ;; wakatime
@@ -89,3 +88,7 @@
 (add-hook 'org-mode-hook 'flyspell-buffer)
 (add-hook 'org-mode-hook 'turn-on-flyspell)
 (setq org-log-done 'time)
+(setq org-export-with-sub-superscripts nil)
+
+;; minimap-mode
+(setq minimap-window-location 'right)
