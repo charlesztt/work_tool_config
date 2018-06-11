@@ -55,7 +55,17 @@
 (setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin")) ;; Currently my Windows does not need this line.
 (setq exec-path (append exec-path '("/Library/TeX/texbin"))) ;; This line may be written for multiple times
 (custom-set-variables
- ;; use the following line if you are in Windows
+ ;; org agenda file lists
+ ;;'(org-agenda-files
+ ;;  (quote
+ ;;   ("~/OneDrive/OrgFiles/charlesztt-personal.org" "~/OneDrive/OrgFiles/charlesztt-work.org" "~/OneDrive/OrgFiles/charlesztt-draft.org")))
+ ;;
+ ;; automatic generated package list
+ ;;'(package-selected-packages
+ ;;  (quote
+ ;;   (company wakatime-mode tabbar neotree minimap auctex)))
+ ;;
+ ;; use the following line when using conda environment
  ;; '(wakatime-python-bin "C:/Python27/python.exe")
  '(wakatime-cli-path "/wakatime/cli.py"))
 
@@ -77,12 +87,6 @@
 
 ;; company
 (add-hook 'after-init-hook 'global-company-mode)
-
-;; company-jedi
-;; currently only available on Linux and Mac
-(defun my/python-mode-hook ()
-  (add-to-list 'company-backends 'company-jedi))
-(add-hook 'python-mode-hook 'my/python-mode-hook)
 
 ;; org-mode
 (add-hook 'org-mode-hook 'flyspell-buffer)
