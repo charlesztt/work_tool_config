@@ -1,0 +1,14 @@
+prinzkarl-cpu
+    nltk
+    gensim
+    tensorflow
+    opencv
+prinzkarl-gpu
+    nltk
+    gensim
+    tensorflow-gpu
+    opencv
+brat
+wikiextractor
+wakatime
+    wakatime (pip)
