@@ -8,6 +8,7 @@ prinzkarl-gpu
     gensim
     tensorflow-gpu
     opencv
+    lxml
 brat
 wikiextractor
 wakatime
