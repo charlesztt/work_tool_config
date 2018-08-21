@@ -11,6 +11,8 @@
 ;; Display running info of the computer
 (display-battery-mode t)
 (display-time-mode t)
+(defun always-use-fancy-splash-screens-p () 1)
+(defalias 'use-fancy-splash-screens-p 'always-use-fancy-splash-screens-p
 (setq fancy-startup-text '(((lambda() "write down anything you like"))))
 (setq fancy-splash-image (expand-file-name "image.png"))
 ;; Set the behavior on version control
@@ -77,13 +79,6 @@
 
 ;; tabbar
 (tabbar-mode t)
-
-;; auctex
-(setq TeX-auto-save t)
-(setq TeX-parse-self t)
-(setq-default TeX-master nil)
-(add-hook 'LaTeX-mode-hook 'flyspell-buffer)
-(add-hook 'LaTeX-mode-hook 'turn-on-flyspell)
 
 ;; company
 (add-hook 'after-init-hook 'global-company-mode)
