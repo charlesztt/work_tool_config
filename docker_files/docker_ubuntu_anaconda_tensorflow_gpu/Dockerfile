@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM nvidia/cuda:latest
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV PATH /opt/conda/bin:$PATH
@@ -21,7 +21,7 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.5.11-Linux-x86
     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     echo "conda activate base" >> ~/.bashrc
 
-RUN /opt/conda/bin/conda install tensorflow anaconda -y && \
+RUN /opt/conda/bin/conda install tensorflow-gpu anaconda -y && \
     /opt/conda/bin/conda clean -tipsy
 
 EXPOSE 22
