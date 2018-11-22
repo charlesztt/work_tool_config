@@ -21,7 +21,7 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.5.11-Linux-x86
     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     echo "conda activate base" >> ~/.bashrc
 
-RUN /opt/conda/bin/pip install seqeval -U --no-deps && \
+RUN /opt/conda/bin/pip install seqeval langdetect -U --no-deps && \
     /opt/conda/bin/conda install -c conda-forge spacy -y && \
     /opt/conda/bin/python -m spacy download en && \
     /opt/conda/bin/conda install gensim tensorflow anaconda -y && \
