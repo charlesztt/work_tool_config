@@ -14,15 +14,15 @@ RUN useradd ubuntu -d /home/ubuntu && \
     mkdir /home/ubuntu && \
     chown ubuntu:ubuntu /home/ubuntu
 
-RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.5.11-Linux-x86_64.sh -O ~/miniconda.sh && \
+RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh && \
     /bin/bash ~/miniconda.sh -b -p /opt/conda && \
     rm ~/miniconda.sh && \
     ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     echo "conda activate base" >> ~/.bashrc
 
-RUN /opt/conda/bin/pip install seqeval langdetect -U --no-deps && \
-    /opt/conda/bin/conda install -c conda-forge spacy rdflib tensorflow-hub -y && \
+RUN /opt/conda/bin/pip install seqeval langdetect tensorflow-hub -U --no-deps && \
+    /opt/conda/bin/conda install -c conda-forge spacy rdflib -y && \
     /opt/conda/bin/python -m spacy download en && \
     /opt/conda/bin/conda install gensim tensorflow anaconda -y && \
     /opt/conda/bin/conda clean -tipsy && \
