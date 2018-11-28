@@ -25,7 +25,8 @@ RUN /opt/conda/bin/pip install seqeval langdetect -U --no-deps && \
     /opt/conda/bin/conda install -c conda-forge spacy rdflib tensorflow-hub -y && \
     /opt/conda/bin/python -m spacy download en && \
     /opt/conda/bin/conda install gensim tensorflow-gpu anaconda -y && \
-    /opt/conda/bin/conda clean -tipsy
+    /opt/conda/bin/conda clean -tipsy &&\
+    rm -rf /root/.cache/pip/*
 
 EXPOSE 22
 CMD service ssh start && /bin/bash
