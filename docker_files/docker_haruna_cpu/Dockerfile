@@ -21,12 +21,11 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     echo "conda activate base" >> ~/.bashrc
 
-RUN /opt/conda/bin/conda install -c conda-forge tensorflow-hub -y && \
+RUN /opt/conda/bin/conda install -c conda-forge tensorflow-hub rdflib langdetect -y && \
     /opt/conda/bin/conda install gensim tensorflow spacy anaconda -y && \
     /opt/conda/bin/python -m spacy download en && \
-    /opt/conda/bin/pip install seqeval langdetect rdflib -U --no-deps &&\
+    /opt/conda/bin/pip install seqeval -U --no-deps &&\
     /opt/conda/bin/conda clean -tipsy &&\
     rm -rf /root/.cache/pip/*
 
-EXPOSE 22
 CMD service ssh start && /bin/bash
