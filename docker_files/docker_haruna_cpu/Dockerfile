@@ -26,8 +26,8 @@ RUN /opt/conda/bin/conda update conda -y && \
     /opt/conda/bin/conda install anaconda -y && \
     /opt/conda/bin/conda install -c conda-forge tensorflow-hub rdflib langdetect -y && \
     /opt/conda/bin/conda install gensim tensorflow spacy -y && \
-    /opt/conda/bin/pip install seqeval -U --no-deps && \
     /opt/conda/bin/conda update anaconda -y && \
+    /opt/conda/bin/pip install seqeval -U --no-deps && \
     /opt/conda/bin/python -m spacy download en && \
     /opt/conda/bin/conda clean -tipsy &&\
     rm -rf /root/.cache/pip/*
