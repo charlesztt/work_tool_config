@@ -12,7 +12,7 @@
 (display-battery-mode t)
 (display-time-mode t)
 (defun always-use-fancy-splash-screens-p () 1)
-(defalias 'use-fancy-splash-screens-p 'always-use-fancy-splash-screens-p
+(defalias 'use-fancy-splash-screens-p 'always-use-fancy-splash-screens-p)
 (setq fancy-startup-text '(((lambda() "write down anything you like"))))
 (setq fancy-splash-image (expand-file-name "image.png"))
 ;; Set the behavior on version control
