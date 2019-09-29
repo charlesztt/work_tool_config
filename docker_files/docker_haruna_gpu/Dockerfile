@@ -24,12 +24,5 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
 RUN /opt/conda/bin/conda update conda -y && \
     /opt/conda/bin/conda update --all -y && \
     /opt/conda/bin/conda install anaconda -y && \
-    /opt/conda/bin/conda install -c conda-forge tensorflow-hub langdetect -y && \
-    /opt/conda/bin/conda install gensim tensorflow-gpu spacy -y && \
-    /opt/conda/bin/conda update anaconda -y && \
-    /opt/conda/bin/pip install seqeval -U --no-deps && \
-    /opt/conda/bin/python -m spacy download en && \
     /opt/conda/bin/conda clean -tipsy &&\
     rm -rf /root/.cache/pip/*
-
-CMD service ssh start && /bin/bash
