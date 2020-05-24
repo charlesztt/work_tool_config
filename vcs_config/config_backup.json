@@ -2,7 +2,6 @@
   "editor.fontSize": 14,
   "editor.wordWrap": "on",
   "latex-workshop.view.pdf.viewer": "tab",
-  "git.autofetch": true,
   "latex-workshop.latex.recipes": [
     {
       "name": "pdflatex -> bibtex -> pdflatex*2",
@@ -20,32 +19,35 @@
       ]
     }
   ],
-  "spellright.language": ["en"],
+  "spellright.language": [
+    "en"
+  ],
   "spellright.documentTypes": [
     "markdown",
     "latex",
     "plaintext"
   ],
   "latex-workshop.latex.clean.fileTypes": [
-      "*.aux",
-      "*.bbl",
-      "*.blg",
-      "*.idx",
-      "*.ind",
-      "*.lof",
-      "*.lot",
-      "*.out",
-      "*.toc",
-      "*.acn",
-      "*.acr",
-      "*.alg",
-      "*.glg",
-      "*.glo",
-      "*.gls",
-      "*.ist",
-      "*.fls",
-      "*.log",
-      "*.fdb_latexmk",
-      "*.cpt"
-    ]
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.cpt"
+  ],
+  "latex-workshop.latex.autoClean.run": "onBuilt"
 }
