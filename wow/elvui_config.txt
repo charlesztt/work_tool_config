@@ -23,7 +23,7 @@
             ["width"] = 222,
         },
     },
-    ["currentTutorial"] = 3,
+    ["currentTutorial"] = 12,
     ["general"] = {
         ["totems"] = {
             ["size"] = 50,
@@ -98,6 +98,115 @@
                     ["width"] = 200,
                 },
             },
+            ["targettarget"] = {
+                ["debuffs"] = {
+                    ["enable"] = false,
+                    ["anchorPoint"] = "TOPRIGHT",
+                },
+                ["power"] = {
+                    ["enable"] = false,
+                },
+                ["disableMouseoverGlow"] = true,
+                ["width"] = 200,
+                ["threatStyle"] = "GLOW",
+                ["height"] = 20,
+                ["raidicon"] = {
+                    ["attachTo"] = "LEFT",
+                    ["xOffset"] = 2,
+                    ["enable"] = false,
+                    ["yOffset"] = 0,
+                },
+            },
+            ["focustarget"] = {
+                ["castbar"] = {
+                    ["width"] = 160,
+                },
+                ["enable"] = true,
+                ["width"] = 160,
+                ["height"] = 50,
+            },
+            ["party"] = {
+                ["rdebuffs"] = {
+                    ["font"] = "聊天",
+                },
+                ["power"] = {
+                    ["height"] = 10,
+                },
+                ["healPrediction"] = {
+                    ["enable"] = true,
+                },
+                ["width"] = 200,
+                ["height"] = 50,
+            },
+            ["raid40"] = {
+                ["enable"] = false,
+                ["healPrediction"] = {
+                    ["enable"] = true,
+                },
+                ["height"] = 25,
+            },
+            ["focus"] = {
+                ["castbar"] = {
+                    ["width"] = 180,
+                },
+                ["width"] = 180,
+                ["height"] = 30,
+            },
+            ["target"] = {
+                ["aurabar"] = {
+                    ["enable"] = false,
+                },
+                ["power"] = {
+                    ["attachTextTo"] = "InfoPanel",
+                },
+                ["castbar"] = {
+                    ["insideInfoPanel"] = false,
+                    ["height"] = 20,
+                    ["width"] = 200,
+                },
+                ["healPrediction"] = {
+                    ["showOverAbsorbs"] = false,
+                },
+                ["disableMouseoverGlow"] = true,
+                ["width"] = 200,
+                ["infoPanel"] = {
+                    ["enable"] = true,
+                },
+                ["health"] = {
+                    ["attachTextTo"] = "InfoPanel",
+                },
+                ["orientation"] = "LEFT",
+                ["height"] = 40,
+                ["pvpIcon"] = {
+                    ["enable"] = true,
+                },
+            },
+            ["raid"] = {
+                ["healPrediction"] = {
+                    ["enable"] = true,
+                },
+                ["visibility"] = "[@raid6,noexists] hide; show",
+            },
+            ["boss"] = {
+                ["debuffs"] = {
+                    ["maxDuration"] = 300,
+                    ["sizeOverride"] = 27,
+                    ["yOffset"] = -16,
+                },
+                ["width"] = 246,
+                ["infoPanel"] = {
+                    ["height"] = 17,
+                },
+                ["height"] = 60,
+                ["buffs"] = {
+                    ["maxDuration"] = 300,
+                    ["sizeOverride"] = 27,
+                    ["yOffset"] = 16,
+                },
+                ["castbar"] = {
+                    ["width"] = 246,
+                },
+            },
             ["player"] = {
                 ["debuffs"] = {
                     ["attachTo"] = "BUFFS",
@@ -130,115 +239,6 @@
                     ["attachTextTo"] = "InfoPanel",
                 },
             },
-            ["focustarget"] = {
-                ["castbar"] = {
-                    ["width"] = 200,
-                },
-                ["enable"] = true,
-                ["width"] = 200,
-                ["height"] = 60,
-            },
-            ["targettarget"] = {
-                ["debuffs"] = {
-                    ["enable"] = false,
-                    ["anchorPoint"] = "TOPRIGHT",
-                },
-                ["power"] = {
-                    ["enable"] = false,
-                },
-                ["disableMouseoverGlow"] = true,
-                ["width"] = 200,
-                ["threatStyle"] = "GLOW",
-                ["height"] = 20,
-                ["raidicon"] = {
-                    ["attachTo"] = "LEFT",
-                    ["xOffset"] = 2,
-                    ["enable"] = false,
-                    ["yOffset"] = 0,
-                },
-            },
-            ["party"] = {
-                ["rdebuffs"] = {
-                    ["font"] = "聊天",
-                },
-                ["power"] = {
-                    ["height"] = 10,
-                },
-                ["healPrediction"] = {
-                    ["enable"] = true,
-                },
-                ["width"] = 200,
-                ["height"] = 50,
-            },
-            ["raid40"] = {
-                ["enable"] = false,
-                ["healPrediction"] = {
-                    ["enable"] = true,
-                },
-                ["height"] = 25,
-            },
-            ["focus"] = {
-                ["castbar"] = {
-                    ["width"] = 180,
-                },
-                ["width"] = 180,
-                ["height"] = 20,
-            },
-            ["target"] = {
-                ["aurabar"] = {
-                    ["enable"] = false,
-                },
-                ["pvpIcon"] = {
-                    ["enable"] = true,
-                },
-                ["power"] = {
-                    ["attachTextTo"] = "InfoPanel",
-                },
-                ["healPrediction"] = {
-                    ["showOverAbsorbs"] = false,
-                },
-                ["disableMouseoverGlow"] = true,
-                ["width"] = 200,
-                ["infoPanel"] = {
-                    ["enable"] = true,
-                },
-                ["health"] = {
-                    ["attachTextTo"] = "InfoPanel",
-                },
-                ["orientation"] = "LEFT",
-                ["height"] = 40,
-                ["castbar"] = {
-                    ["insideInfoPanel"] = false,
-                    ["height"] = 20,
-                    ["width"] = 200,
-                },
-            },
-            ["raid"] = {
-                ["healPrediction"] = {
-                    ["enable"] = true,
-                },
-                ["visibility"] = "[@raid6,noexists] hide; show",
-            },
-            ["boss"] = {
-                ["debuffs"] = {
-                    ["maxDuration"] = 300,
-                    ["sizeOverride"] = 27,
-                    ["yOffset"] = -16,
-                },
-                ["width"] = 246,
-                ["infoPanel"] = {
-                    ["height"] = 17,
-                },
-                ["height"] = 60,
-                ["buffs"] = {
-                    ["maxDuration"] = 300,
-                    ["sizeOverride"] = 27,
-                    ["yOffset"] = 16,
-                },
-                ["castbar"] = {
-                    ["width"] = 246,
-                },
-            },
         },
         ["font"] = "聊天",
         ["smoothbars"] = true,
@@ -268,19 +268,21 @@
     ["actionbar"] = {
         ["bar3"] = {
             ["buttonsPerRow"] = 12,
-            ["buttonsize"] = 60,
+            ["buttonsize"] = 50,
             ["buttons"] = 12,
         },
         ["fontSize"] = 16,
         ["fontOutline"] = "NONE",
         ["bar1"] = {
-            ["buttonsize"] = 60,
+            ["buttonsize"] = 50,
         },
         ["bar5"] = {
-            ["enabled"] = false,
+            ["buttonsPerRow"] = 12,
+            ["buttonsize"] = 50,
+            ["buttons"] = 12,
         },
         ["bar2"] = {
-            ["buttonsize"] = 60,
+            ["buttonsize"] = 50,
             ["enabled"] = true,
         },
         ["font"] = "聊天",
@@ -292,7 +294,7 @@
     ["layoutSet"] = "dpsCaster",
     ["movers"] = {
         ["TopCenterContainerMover"] = "TOP,ElvUIParent,TOP,0,-30",
-        ["PetAB"] = "RIGHT,ElvUI_Bar4,LEFT,-4,0",
+        ["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,338",
         ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,308,-240",
         ["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,4",
         ["GMMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,250,-5",
@@ -302,48 +304,49 @@
         ["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,-1,293",
         ["SocialMenuMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-187",
         ["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-3",
+        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,309",
         ["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,737",
-        ["ElvUIBagMover"] = "BOTTOMRIGHT,RightChatPanel,BOTTOMRIGHT,0,26",
-        ["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,420,290",
-        ["ElvUF_FocusMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,440",
+        ["ElvUIBankMover"] = "BOTTOMLEFT,LeftChatPanel,BOTTOMLEFT,0,26",
         ["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,520,-210",
-        ["ElvUF_FocusTargetMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,520,-480",
-        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,360",
+        ["ElvUF_FocusMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,530,480",
+        ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,358",
+        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,308",
+        ["ElvUF_FocusTargetMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,540,-490",
         ["DurabilityFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-135,-300",
-        ["ElvUF_PetCastbarMover"] = "TOPLEFT,ElvUF_Pet,BOTTOMLEFT,0,-1",
+        ["ElvUF_PetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,290",
         ["VehicleSeatMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-4",
-        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,400",
+        ["PetAB"] = "RIGHT,ElvUI_Bar4,LEFT,-4,0",
         ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,43",
-        ["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,315",
-        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,348",
         ["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,368,-295",
+        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,358",
+        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,338",
         ["LossControlMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,507",
         ["LevelUpBossBannerMover"] = "TOP,ElvUIParent,TOP,-1,-120",
         ["MirrorTimer1Mover"] = "TOP,ElvUIParent,TOP,-1,-96",
-        ["ElvUF_FocusCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,420",
-        ["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,160",
-        ["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,100",
+        ["ElvUF_FocusCastbarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,530,460",
+        ["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,170",
+        ["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,120",
         ["BelowMinimapContainerMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-274",
-        ["AltPowerBarMover"] = "TOP,ElvUIParent,TOP,-1,-36",
-        ["TalkingHeadFrameMover"] = "TOP,ElvUIParent,TOP,0,-165",
         ["ReputationBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-264",
-        ["AzeriteBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-245",
-        ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,220",
-        ["ElvAB_5"] = "BOTTOM,ElvUIParent,BOTTOM,-92,57",
-        ["VehicleLeaveButton"] = "BOTTOM,ElvUIParent,BOTTOM,0,300",
+        ["TalkingHeadFrameMover"] = "TOP,ElvUIParent,TOP,0,-165",
         ["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,368,-210",
+        ["AltPowerBarMover"] = "TOP,ElvUIParent,TOP,-1,-36",
+        ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,220",
+        ["ElvAB_5"] = "BOTTOM,ElvUIParent,BOTTOM,0,70",
+        ["VehicleLeaveButton"] = "BOTTOM,ElvUIParent,BOTTOM,0,300",
         ["MirrorTimer2Mover"] = "TOP,MirrorTimer1,BOTTOM,0,0",
-        ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-163,-325",
-        ["BNETMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-274",
         ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,769",
+        ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-163,-325",
+        ["BNETMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,240",
         ["ElvNP_PlayerMover"] = "TOP,UIParent,CENTER,0,-150",
+        ["AzeriteBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-245",
         ["HonorBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-255",
-        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,374",
+        ["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-360,-365",
         ["TooltipMover"] = "BOTTOMRIGHT,RightChatToggleButton,BOTTOMRIGHT,0,0",
         ["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-186",
         ["BossHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-360,-300",
-        ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,400",
-        ["ElvUIBankMover"] = "BOTTOMLEFT,LeftChatPanel,BOTTOMLEFT,0,26",
+        ["ElvUIBagMover"] = "BOTTOMRIGHT,RightChatPanel,BOTTOMRIGHT,0,26",
+        ["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,420,290",
         ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
         ["AlertFrameMover"] = "TOP,ElvUIParent,TOP,-1,-18",
         ["DebuffsMover"] = "BOTTOMRIGHT,MMHolder,BOTTOMLEFT,-7,1",
