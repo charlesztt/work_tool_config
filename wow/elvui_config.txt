@@ -2,28 +2,8 @@
     ["databars"] = {
         ["reputation"] = {
             ["enable"] = true,
-            ["orientation"] = "HORIZONTAL",
-            ["height"] = 10,
-            ["width"] = 222,
-        },
-        ["azerite"] = {
-            ["height"] = 10,
-            ["orientation"] = "HORIZONTAL",
-            ["width"] = 222,
-        },
-        ["experience"] = {
-            ["height"] = 10,
-            ["orientation"] = "HORIZONTAL",
-            ["textSize"] = 12,
-            ["width"] = 348,
-        },
-        ["honor"] = {
-            ["orientation"] = "HORIZONTAL",
-            ["height"] = 10,
-            ["width"] = 222,
         },
     },
-    ["currentTutorial"] = 12,
     ["general"] = {
         ["totems"] = {
             ["size"] = 50,
@@ -31,7 +11,7 @@
             ["spacing"] = 8,
         },
         ["fontSize"] = 16,
-        ["talkingHeadFrameScale"] = 1,
+        ["talkingHeadFrameScale"] = 0.8,
         ["bordercolor"] = {
             ["r"] = 0,
             ["g"] = 0,
@@ -44,41 +24,40 @@
         ["font"] = "聊天",
         ["bonusObjectivePosition"] = "AUTO",
         ["valuecolor"] = {
-            ["r"] = 0,
-            ["g"] = 0.4392147064209,
-            ["b"] = 0.86666476726532,
+            ["r"] = 0.95686066150665,
+            ["g"] = 0.54901838302612,
+            ["b"] = 0.72941017150879,
         },
+        ["talkingHeadFrameBackdrop"] = true,
         ["objectiveFrameHeight"] = 400,
     },
     ["layoutSetting"] = "dpsCaster",
-    ["tooltip"] = {
-        ["textFontSize"] = 16,
+    ["bags"] = {
+        ["countFontSize"] = 16,
+        ["itemLevelFont"] = "聊天",
+        ["bagSize"] = 42,
+        ["itemLevelFontSize"] = 16,
+        ["itemLevelCustomColorEnable"] = true,
+        ["bagWidth"] = 474,
+        ["countFont"] = "聊天",
+        ["bankSize"] = 42,
+        ["bankWidth"] = 474,
+        ["scrapIcon"] = true,
+    },
+    ["auras"] = {
         ["font"] = "聊天",
-        ["healthBar"] = {
-            ["height"] = 12,
-            ["font"] = "聊天",
-            ["fontOutline"] = "MONOCHROMEOUTLINE",
+        ["buffs"] = {
+            ["countFontSize"] = 16,
+            ["durationFontSize"] = 16,
+            ["size"] = 40,
         },
-        ["alwaysShowRealm"] = true,
-        ["smallTextFontSize"] = 16,
-        ["headerFontSize"] = 16,
+        ["debuffs"] = {
+            ["countFontSize"] = 16,
+            ["durationFontSize"] = 16,
+            ["size"] = 40,
+        },
     },
     ["v11NamePlateReset"] = true,
-    ["chat"] = {
-        ["font"] = "聊天",
-        ["panelHeight"] = 236,
-        ["tabFont"] = "聊天",
-        ["fontSize"] = 16,
-        ["tabFontSize"] = 16,
-        ["panelWidth"] = 472,
-    },
-    ["nameplates"] = {
-        ["threat"] = {
-            ["enable"] = false,
-        },
-        ["font"] = "聊天",
-        ["fadeIn"] = false,
-    },
     ["unitframe"] = {
         ["fontSize"] = 16,
         ["units"] = {
@@ -87,16 +66,16 @@
                     ["enable"] = true,
                     ["anchorPoint"] = "TOPRIGHT",
                 },
-                ["disableTargetGlow"] = false,
-                ["width"] = 200,
-                ["infoPanel"] = {
-                    ["height"] = 14,
-                },
-                ["height"] = 30,
                 ["castbar"] = {
                     ["iconSize"] = 32,
                     ["width"] = 200,
                 },
+                ["width"] = 200,
+                ["infoPanel"] = {
+                    ["height"] = 14,
+                },
+                ["disableTargetGlow"] = false,
+                ["height"] = 30,
             },
             ["targettarget"] = {
                 ["debuffs"] = {
@@ -108,8 +87,8 @@
                 },
                 ["disableMouseoverGlow"] = true,
                 ["width"] = 200,
-                ["threatStyle"] = "GLOW",
                 ["height"] = 20,
+                ["threatStyle"] = "GLOW",
                 ["raidicon"] = {
                     ["attachTo"] = "LEFT",
                     ["xOffset"] = 2,
@@ -118,11 +97,11 @@
                 },
             },
             ["focustarget"] = {
+                ["enable"] = true,
+                ["width"] = 160,
                 ["castbar"] = {
                     ["width"] = 160,
                 },
-                ["enable"] = true,
-                ["width"] = 160,
                 ["height"] = 50,
             },
             ["party"] = {
@@ -140,16 +119,19 @@
             },
             ["raid40"] = {
                 ["enable"] = false,
+                ["rdebuffs"] = {
+                    ["font"] = "聊天",
+                },
                 ["healPrediction"] = {
                     ["enable"] = true,
                 },
                 ["height"] = 25,
             },
             ["focus"] = {
+                ["width"] = 180,
                 ["castbar"] = {
                     ["width"] = 180,
                 },
-                ["width"] = 180,
                 ["height"] = 30,
             },
             ["target"] = {
@@ -159,10 +141,8 @@
                 ["power"] = {
                     ["attachTextTo"] = "InfoPanel",
                 },
-                ["castbar"] = {
-                    ["insideInfoPanel"] = false,
-                    ["height"] = 20,
-                    ["width"] = 200,
+                ["pvpIcon"] = {
+                    ["enable"] = true,
                 },
                 ["healPrediction"] = {
                     ["showOverAbsorbs"] = false,
@@ -172,16 +152,21 @@
                 ["infoPanel"] = {
                     ["enable"] = true,
                 },
+                ["orientation"] = "LEFT",
                 ["health"] = {
                     ["attachTextTo"] = "InfoPanel",
                 },
-                ["orientation"] = "LEFT",
                 ["height"] = 40,
-                ["pvpIcon"] = {
-                    ["enable"] = true,
+                ["castbar"] = {
+                    ["insideInfoPanel"] = false,
+                    ["height"] = 20,
+                    ["width"] = 200,
                 },
             },
             ["raid"] = {
+                ["rdebuffs"] = {
+                    ["font"] = "聊天",
+                },
                 ["healPrediction"] = {
                     ["enable"] = true,
                 },
@@ -197,27 +182,28 @@
                 ["infoPanel"] = {
                     ["height"] = 17,
                 },
+                ["castbar"] = {
+                    ["width"] = 246,
+                },
                 ["height"] = 60,
                 ["buffs"] = {
                     ["maxDuration"] = 300,
                     ["sizeOverride"] = 27,
                     ["yOffset"] = 16,
                 },
-                ["castbar"] = {
-                    ["width"] = 246,
-                },
             },
             ["player"] = {
                 ["debuffs"] = {
                     ["attachTo"] = "BUFFS",
                 },
-                ["castbar"] = {
-                    ["insideInfoPanel"] = false,
-                    ["height"] = 20,
-                    ["width"] = 200,
+                ["health"] = {
+                    ["attachTextTo"] = "InfoPanel",
                 },
                 ["aurabar"] = {
                     ["enable"] = false,
+                },
+                ["power"] = {
+                    ["attachTextTo"] = "InfoPanel",
                 },
                 ["healPrediction"] = {
                     ["showOverAbsorbs"] = false,
@@ -227,16 +213,15 @@
                 ["infoPanel"] = {
                     ["enable"] = true,
                 },
-                ["health"] = {
-                    ["attachTextTo"] = "InfoPanel",
+                ["castbar"] = {
+                    ["insideInfoPanel"] = false,
+                    ["height"] = 20,
+                    ["width"] = 200,
                 },
                 ["height"] = 40,
                 ["buffs"] = {
                     ["enable"] = true,
                     ["attachTo"] = "FRAME",
-                },
-                ["power"] = {
-                    ["attachTextTo"] = "InfoPanel",
                 },
             },
         },
@@ -258,11 +243,6 @@
     },
     ["datatexts"] = {
         ["fontSize"] = 16,
-        ["panels"] = {
-            ["LeftChatDataPanel"] = {
-                ["right"] = "Quick Join",
-            },
-        },
         ["font"] = "聊天",
     },
     ["actionbar"] = {
@@ -271,29 +251,35 @@
             ["buttonsize"] = 50,
             ["buttons"] = 12,
         },
-        ["fontSize"] = 16,
         ["fontOutline"] = "NONE",
         ["bar1"] = {
             ["buttonsize"] = 50,
         },
+        ["fontSize"] = 16,
         ["bar5"] = {
             ["buttonsPerRow"] = 12,
             ["buttonsize"] = 50,
             ["buttons"] = 12,
         },
+        ["font"] = "聊天",
         ["bar2"] = {
             ["buttonsize"] = 50,
             ["enabled"] = true,
         },
-        ["font"] = "聊天",
         ["macrotext"] = true,
         ["bar4"] = {
             ["buttonsize"] = 40,
         },
     },
-    ["layoutSet"] = "dpsCaster",
+    ["nameplates"] = {
+        ["threat"] = {
+            ["enable"] = false,
+        },
+        ["font"] = "聊天",
+        ["fadeIn"] = false,
+    },
     ["movers"] = {
-        ["TopCenterContainerMover"] = "TOP,ElvUIParent,TOP,0,-30",
+        ["ElvUF_FocusCastbarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,530,460",
         ["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,338",
         ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,308,-240",
         ["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,4",
@@ -303,14 +289,14 @@
         ["LootFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,418,-186",
         ["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,-1,293",
         ["SocialMenuMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-187",
-        ["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-3",
+        ["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-248",
         ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,309",
         ["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,737",
         ["ElvUIBankMover"] = "BOTTOMLEFT,LeftChatPanel,BOTTOMLEFT,0,26",
-        ["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,520,-210",
+        ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
         ["ElvUF_FocusMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,530,480",
+        ["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,420,290",
         ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,358",
-        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,308",
         ["ElvUF_FocusTargetMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,540,-490",
         ["DurabilityFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-135,-300",
         ["ElvUF_PetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,290",
@@ -319,62 +305,57 @@
         ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,43",
         ["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,368,-295",
         ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,358",
-        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,338",
+        ["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-360,-365",
         ["LossControlMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,507",
         ["LevelUpBossBannerMover"] = "TOP,ElvUIParent,TOP,-1,-120",
         ["MirrorTimer1Mover"] = "TOP,ElvUIParent,TOP,-1,-96",
-        ["ElvUF_FocusCastbarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,530,460",
+        ["TopCenterContainerMover"] = "TOP,ElvUIParent,TOP,0,-30",
         ["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,170",
         ["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,120",
         ["BelowMinimapContainerMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-274",
-        ["ReputationBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-264",
+        ["AzeriteBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-245",
         ["TalkingHeadFrameMover"] = "TOP,ElvUIParent,TOP,0,-165",
-        ["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,368,-210",
+        ["ElvNP_PlayerMover"] = "TOP,UIParent,CENTER,0,-150",
         ["AltPowerBarMover"] = "TOP,ElvUIParent,TOP,-1,-36",
         ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,220",
-        ["ElvAB_5"] = "BOTTOM,ElvUIParent,BOTTOM,0,70",
+        ["ReputationBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-264",
         ["VehicleLeaveButton"] = "BOTTOM,ElvUIParent,BOTTOM,0,300",
-        ["MirrorTimer2Mover"] = "TOP,MirrorTimer1,BOTTOM,0,0",
-        ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,769",
-        ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-163,-325",
         ["BNETMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,240",
-        ["ElvNP_PlayerMover"] = "TOP,UIParent,CENTER,0,-150",
-        ["AzeriteBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-245",
+        ["ShiftAB"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,420,359",
+        ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-163,-325",
+        ["MirrorTimer2Mover"] = "TOP,MirrorTimer1,BOTTOM,0,0",
+        ["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,368,-210",
+        ["ElvAB_5"] = "BOTTOM,ElvUIParent,BOTTOM,0,70",
         ["HonorBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-255",
-        ["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-360,-365",
+        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,338",
         ["TooltipMover"] = "BOTTOMRIGHT,RightChatToggleButton,BOTTOMRIGHT,0,0",
         ["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-186",
         ["BossHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-360,-300",
         ["ElvUIBagMover"] = "BOTTOMRIGHT,RightChatPanel,BOTTOMRIGHT,0,26",
-        ["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,420,290",
-        ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
+        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,308",
+        ["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,520,-210",
         ["AlertFrameMover"] = "TOP,ElvUIParent,TOP,-1,-18",
         ["DebuffsMover"] = "BOTTOMRIGHT,MMHolder,BOTTOMLEFT,-7,1",
-        ["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-248",
+        ["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-3",
     },
-    ["auras"] = {
+    ["chat"] = {
+        ["fontSize"] = 16,
+        ["panelHeight"] = 236,
+        ["tabFont"] = "聊天",
         ["font"] = "聊天",
-        ["buffs"] = {
-            ["countFontSize"] = 16,
-            ["durationFontSize"] = 16,
-            ["size"] = 40,
-        },
-        ["debuffs"] = {
-            ["countFontSize"] = 16,
-            ["durationFontSize"] = 16,
-            ["size"] = 40,
-        },
+        ["tabFontSize"] = 16,
+        ["panelWidth"] = 472,
     },
-    ["bags"] = {
-        ["countFontSize"] = 16,
-        ["itemLevelFont"] = "聊天",
-        ["bagSize"] = 42,
-        ["itemLevelFontSize"] = 16,
-        ["itemLevelCustomColorEnable"] = true,
-        ["scrapIcon"] = true,
-        ["countFont"] = "聊天",
-        ["bankSize"] = 42,
-        ["bankWidth"] = 474,
-        ["bagWidth"] = 474,
+    ["tooltip"] = {
+        ["textFontSize"] = 16,
+        ["font"] = "聊天",
+        ["healthBar"] = {
+            ["height"] = 12,
+            ["font"] = "聊天",
+            ["fontOutline"] = "MONOCHROMEOUTLINE",
+        },
+        ["smallTextFontSize"] = 16,
+        ["alwaysShowRealm"] = true,
+        ["headerFontSize"] = 16,
     },
 }::profile::general
