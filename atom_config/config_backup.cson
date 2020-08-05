@@ -1,7 +1,6 @@
 "*":
   core:
     telemetryConsent: "limited"
-    uriHandlerRegistration: "always"
   editor:
     fontSize: 18
   minimap: {}
