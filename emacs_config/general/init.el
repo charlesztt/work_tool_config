@@ -68,7 +68,7 @@
  ;;   (company wakatime-mode tabbar neotree minimap auctex)))
  ;;
  ;; use the following line when using conda environment
- ;; '(wakatime-python-bin "C:/Python27/python.exe")
+ '(wakatime-python-bin "C:/Python27/python.exe")
  '(wakatime-cli-path "/wakatime/cli.py"))
 
 ;; wakatime
