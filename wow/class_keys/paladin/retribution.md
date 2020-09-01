@@ -33,5 +33,5 @@
 |Ctrl+E|妨害之手|
 |Ctrl+R|
 |Ctrl+Z|清算之手|
-|Ctrl+X|盲目之光|
-|Ctrl+C|战争践踏（种族）|
+|Ctrl+X||
+|Ctrl+C|（种族）|
