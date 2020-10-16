@@ -30,7 +30,7 @@
 
 ```
 #showtooltip 真言术：耀
-/cast [@mouseover,exists][] 真言术：耀
+/cast [@mouseover,nodead,help][nodead,help]真言术：耀; [@mouseover,nodead,harm][nodead,harm]精神灼烧
 ```
 
 ```
@@ -46,4 +46,9 @@
 ```
 #showtooltip 闪光力场
 /cast [@mouseover,exists][] 闪光力场
+```
+
+```
+#showtooltip 心灵震爆
+/cast [@mouseover,exists][] 心灵震爆
 ```

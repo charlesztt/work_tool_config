@@ -30,7 +30,7 @@
 
 ```
 #showtooltip 神圣震击
-/cast [@mouseover,exists][] 神圣震击
+/cast [@mouseover,nodead,help][nodead,help]神圣震击; [@mouseover,nodead,harm][nodead,harm]审判
 ```
 
 ```
@@ -46,4 +46,9 @@
 ```
 #showtooltip 赋予信仰
 /cast [@mouseover,exists][] 赋予信仰
+```
+
+```
+#showtooltip 荣耀圣令
+/cast [@mouseover,exists][] 荣耀圣令
 ```
