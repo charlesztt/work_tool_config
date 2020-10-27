@@ -29,8 +29,13 @@
 ```
 
 ```
+#showtooltip 牺牲祝福
+/cast [@mouseover,exists][] 牺牲祝福
+```
+
+```
 #showtooltip 神圣震击
-/cast [@mouseover,nodead,help][nodead,help]神圣震击; [@mouseover,nodead,harm][nodead,harm]审判
+/cast [@mouseover,nodead,help][nodead,help]神圣震击; [@mouseover,nodead,harm][nodead,harm]审判; 神圣震击
 ```
 
 ```
@@ -39,16 +44,11 @@
 ```
 
 ```
-#showtooltip 牺牲祝福
-/cast [@mouseover,exists][] 牺牲祝福
+#showtooltip 荣耀圣令
+/cast [@mouseover,exists][] 荣耀圣令
 ```
 
 ```
 #showtooltip 赋予信仰
 /cast [@mouseover,exists][] 赋予信仰
-```
-
-```
-#showtooltip 荣耀圣令
-/cast [@mouseover,exists][] 荣耀圣令
 ```
