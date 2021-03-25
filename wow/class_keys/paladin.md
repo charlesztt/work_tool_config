@@ -8,7 +8,7 @@
 | Ctrl+1 | Ctrl+2 | Ctrl+3 | Ctrl+4 | Ctrl+5 |  | Ctrl+Q | Ctrl+E | Ctrl+R | Ctrl+Z | Ctrl+X | Ctrl+C |
 | 复仇之怒 | 圣佑术 | 奉献 | 自由祝福（指向） | 圣盾术 |  |  | 愤怒之锤 | 牺牲祝福（指向） | 清算之手 |  | 种族技能 |
 | Alt+Q | Alt+E | Alt+R | Alt+F | Alt+X | Alt+C | Alt+V | Alt+1 | Alt+2 | Alt+3 | Alt+4 | Alt+5 |
-| 圣光之锤 |  | 超度邪恶 |  |  |  | 项链 | 咕咕（格里恩） | 圣光道标 | 信仰道标 | 救赎 | 宽恕 |
+| 圣光之锤 |  | 超度邪恶 |  |  |  | 项链 | 咕咕（格里恩） | 圣光道标 | 信仰道标 | 宽恕 | 救赎 |
 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | 十字军光环 | 虔诚光环 | 专注光环 | 惩戒光环 |  |  |  |  |  |  |  | 静思 |
 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
