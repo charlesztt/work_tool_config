@@ -1,7 +1,6 @@
 dbm
 wa
     https://wago.io/sekirowa
-bagon
 dejunk
 handynotes
 rarity
