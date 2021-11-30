@@ -133,9 +133,9 @@
         },
     },
     ["bags"] = {
-        ["bagSize"] = 30,
+        ["bagSize"] = 45,
         ["bagWidth"] = 474,
-        ["bankSize"] = 30,
+        ["bankSize"] = 35,
         ["bankWidth"] = 474,
         ["countFont"] = "聊天",
         ["countFontSize"] = 18,
