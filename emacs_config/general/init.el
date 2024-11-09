@@ -5,7 +5,7 @@
 (global-unset-key (kbd "C-x C-z"))
 (global-unset-key (kbd "C-x C-c"))
 ;; Show line numbers
-(global-linum-mode t)
+(global-display-line-numbers-mode 1)
 ;; Word wrap
 (global-visual-line-mode t)
 ;; Display running info of the computer
