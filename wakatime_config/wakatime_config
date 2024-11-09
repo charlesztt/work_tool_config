@@ -1,3 +1,6 @@
 [settings]
-api_key = xxxx
-hidefilenames = true
+api_key = 
+hide_file_names = true
+hide_project_names = true
+hide_branch_names = true
+hide_project_folder = true
