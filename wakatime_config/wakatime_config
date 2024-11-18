@@ -4,3 +4,4 @@ hide_file_names = true
 hide_project_names = true
 hide_branch_names = true
 hide_project_folder = true
+include_only_with_project_file = true
