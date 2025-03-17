@@ -6,7 +6,8 @@ For font issues, please check the following links
 - For Interfaces: [Mi](https://hyperos.mi.com/font/en/details/sc/)
 - Sans: [思源黑体/Source Han Sans](https://github.com/adobe-fonts/source-han-sans)
 - Serif: [思源宋体/Source Han Serif](https://github.com/adobe-fonts/source-han-serif)
-- Mono: [思源等宽/Source Han Mono](https://github.com/adobe-fonts/source-han-mono)
+- Mono (more CJK): [思源等宽/Source Han Mono](https://github.com/adobe-fonts/source-han-mono)
+- Mono (less CJK): [Maple Font](https://github.com/subframe7536/maple-font)
 ## Emacs
 ### Useful commands
 - M-x flyspell-mode
