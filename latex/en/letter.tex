@@ -1,0 +1,36 @@
+\documentclass{letter}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{lipsum}
+
+\signature{Your Name}
+\address{Your Address \\ City, ZIP Code \\ Country}
+\date{\today}
+
+\geometry{headheight = 0.6in}
+\fancypagestyle{empty}{\fancyhf{}\fancyhead[L]{\includegraphics[height=0.5in, keepaspectratio=true]{logo.pdf}}}
+\fancypagestyle{firstpage}{\fancyhf{}\fancyhead[L]{\includegraphics[height=0.5in, keepaspectratio=true]{logo.pdf}}}
+\fancypagestyle{plain}{\fancyhf{}\fancyhead[L]{\includegraphics[height=0.5in, keepaspectratio=true]{logo.pdf}}}
+\pagestyle{plain}
+
+\begin{document}%
+    \begin{letter}{Recipient Name \\ Recipient Address \\ City, ZIP Code \\ Country}
+        \opening{Dear [Recipient's Name],}
+
+% \justifying
+        I hope this letter finds you well. I am writing to discuss [your main topic]. It has been a pleasure working with you, and I appreciate the opportunity to collaborate on [specific project or reason].
+        
+        This letter serves to [explain the purpose of the letter], and I would like to emphasize the importance of [key points]. Please let me know if there are any questions or further clarifications needed.
+        
+        Thank you for your time and consideration. I look forward to your response.
+        
+        \closing{Sincerely,}
+        
+        \ps{P.S. If there is any additional note, mention it here.}
+        
+        \encl{Enclosure: [List any attached documents]}
+        
+    \end{letter}%
+\end{document}%

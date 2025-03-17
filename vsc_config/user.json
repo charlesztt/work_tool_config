@@ -32,5 +32,6 @@
         "*.fdb_latexmk",
         "*.cpt"
     ],
-    "latex-workshop.latex.autoClean.run": "onBuilt"
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "editor.fontFamily": "'Source Han Mono SC', Menlo, Monaco, 'Courier New', monospace"
 }

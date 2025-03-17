@@ -1,0 +1,45 @@
+\documentclass[11pt,letter,roman]{moderncv}
+\usepackage{xeCJK}
+\usepackage{fontspec}
+\usepackage{CJK,CJKnumb}
+
+\setCJKmainfont[AutoFakeBold, AutoFakeSlant]{Source Han Serif SC VF}
+\setCJKsansfont{MiSans VF}
+\setCJKmonofont{Source Han Mono SC}
+
+\renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
+% \renewcommand{\today}{\CJKnumber\year 年 \CJKnumber\month 月 \CJKnumber\day 日}
+
+\moderncvstyle{classic}
+\moderncvcolor{green}
+\name{安度因}{·乌瑞恩}
+\title{新人任务}                    % optional, remove / comment the line if not wanted
+\address{暴风要塞}{艾尔文森林暴风城}{艾泽拉斯王国}     % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(234)~567~8910}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{+2~(345)~678~9012}                    % optional, remove / comment the line if not wanted
+\phone[fax]{+3~(456)~789~0123}                      % optional, remove / comment the line if not wanted
+\email{john@doe.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{varaniumailogo.pdf}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{愿圣光与你同在}                                 % optional, remove / comment the line if not wanted
+
+\begin{document}
+
+\recipient{光铸德莱尼}{
+圣光军团\\
+泽尼达尔}
+\date{\today}
+\opening{光铸者}
+\makelettertitle
+
+圣光保佑你。
+
+\closing{向您致敬}
+\enclosure[附赠]{\\
+救世神器\\
+艾泽拉斯之心}
+
+\makeletterclosing
+
+\end{document}
