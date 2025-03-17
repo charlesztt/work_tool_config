@@ -29,9 +29,9 @@
 (set-face-attribute 'default nil :font "Menlo 18") ;; For Windows "Consolas 16"
 ;; Set Chinese font
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
-  (set-fontset-font (frame-parameter nil 'font)
-		    charset (font-spec :family "STFangSong"
-				       :size 22))) ;; For Windows "Fangsong" 24
+        (set-fontset-font (frame-parameter nil 'font)
+         charset (font-spec :family "STFangSong"
+                            :size 22))) ;; For Windows "Fangsong" 24
 ;; Set the background color
 (custom-set-faces
  '(default ((t (:background "#c7edcc")))))
@@ -39,35 +39,14 @@
 (setq-default ispell-program-name "/usr/local/bin/aspell")
 
 ;; Step 2: Package
-;; If you are using Linux whose Emacs version is below 24, download package.el, and add the following codes
-(when
-    (load
-     (expand-file-name "~/.emacs.d/package.el")))
 ;; Add melpa
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-;; Again, when using Emacs <24, add the following
-(when (< emacs-major-version 24)
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 ;; Initialize Package
 (package-initialize)
 
 ;; Step 3: Install pakcages and add some commands
-;; The following two lines of codes will be revisited for multiple times due to different package installation and platform you used.
-(setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin")) ;; Currently my Windows does not need this line.
-(setq exec-path (append exec-path '("/Library/TeX/texbin"))) ;; This line may be written for multiple times
 (custom-set-variables
- ;; org agenda file lists
- ;;'(org-agenda-files
- ;;  (quote
- ;;   ("~/OneDrive/OrgFiles/charlesztt-personal.org" "~/OneDrive/OrgFiles/charlesztt-work.org" "~/OneDrive/OrgFiles/charlesztt-draft.org")))
- ;;
- ;; automatic generated package list
- ;;'(package-selected-packages
- ;;  (quote
- ;;   (company wakatime-mode tabbar neotree minimap auctex)))
- ;;
- ;; use the following line when using conda environment
  '(wakatime-python-bin "C:/Python27/python.exe")
  '(wakatime-cli-path "/wakatime/cli.py"))
 
