@@ -69,4 +69,6 @@
 (setq org-export-with-sub-superscripts nil)
 
 ;; minimap-mode
+(minimap-mode)
+(add-to-list 'minimap-major-modes 'text-mode)
 (setq minimap-window-location 'right)
