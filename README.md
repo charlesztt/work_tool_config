@@ -31,3 +31,8 @@ For font issues, please check the following links, and please download those "st
 ## Wakatime
 ### Tips
 Create a file with the name of `.wakatime-project` and add a name to track the project.
+## Obsidian
+### Plugins
+- Excalidraw
+- Webpage HTML Export
+- WakaTime
