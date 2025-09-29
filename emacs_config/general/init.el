@@ -69,3 +69,6 @@
 (minimap-mode)
 (add-to-list 'minimap-major-modes 'text-mode)
 (setq minimap-window-location 'right)
+
+;; solarized-theme
+(load-theme 'solarized-light t)
