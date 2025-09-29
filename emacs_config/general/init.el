@@ -26,12 +26,12 @@
  version-control t)
 ;; Set the fonts
 ;; Set English font
-(set-face-attribute 'default nil :font "Source Han Mono SC 18")
+(set-frame-font "Maple Mono NF CN-16" nil t)
 ;; Set Chinese font
-(dolist (charset '(kana han symbol cjk-misc bopomofo))
-        (set-fontset-font (frame-parameter nil 'font)
-	 charset (font-spec :family "Source Han Mono SC"
-			    :size 18)))
+(mapc
+ (lambda (charset)
+   (set-fontset-font t charset (font-spec :family "Maple Mono NF CN" :size 16)))
+ '(kana han symbol cjk-misc bopomofo))
 ;; Spell checker (Don't forget to install aspell)
 (setq-default ispell-program-name "/usr/local/bin/aspell")
 
@@ -71,4 +71,10 @@
 (setq minimap-window-location 'right)
 
 ;; solarized-theme
+(setq solarized-use-variable-pitch nil) ;; Don't change the font for some headings and titles
+(setq solarized-height-minus-1 1.0)
+(setq solarized-height-plus-1 1.0)
+(setq solarized-height-plus-2 1.0)
+(setq solarized-height-plus-3 1.0)
+(setq solarized-height-plus-4 1.0) ;; Avoid all font-size changes
 (load-theme 'solarized-light t)
