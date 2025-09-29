@@ -3,11 +3,11 @@ This is a note-like repo for me to quickly set up editors or other software as s
 ## General
 ### Font
 For font issues, please check the following links, and please download those "static" instead of variable ones, and please keep in mind that OTx is new than TTx.
-- For Interfaces: [Mi](https://hyperos.mi.com/font/en/download/)
-- Sans: [思源黑体/Source Han Sans](https://github.com/adobe-fonts/source-han-sans)
-- Serif: [思源宋体/Source Han Serif](https://github.com/adobe-fonts/source-han-serif)
-- Mono (more CJK): [思源等宽/Source Han Mono](https://github.com/adobe-fonts/source-han-mono)
-- Mono (less CJK): [Maple Font](https://github.com/subframe7536/maple-font)
+- For Interfaces: [Mi](https://hyperos.mi.com/font/en/download/) - Download all and use the MiSans
+- Sans: [思源黑体/Source Han Sans](https://github.com/adobe-fonts/source-han-sans/tree/release) - Download the "Super OTC"
+- Serif: [思源宋体/Source Han Serif](https://github.com/adobe-fonts/source-han-serif/tree/release) - Download the "Super OTC"
+- Mono (more CJK): [思源等宽/Source Han Mono](https://github.com/adobe-fonts/source-han-mono) - Go to release and download
+- Mono (less CJK): [Maple Font](https://github.com/subframe7536/maple-font) - Download from the "*懒人包*" link.
 ## Emacs
 ### Useful commands
 - M-x flyspell-mode
@@ -18,7 +18,7 @@ For font issues, please check the following links, and please download those "st
 - company
 - tabbar
 - neotree
-## Latex
+- solarized-theme
 ## Visual Studio Code
 ### Plugins
 - Jupyter-related

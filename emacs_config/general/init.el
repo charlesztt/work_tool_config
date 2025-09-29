@@ -26,15 +26,12 @@
  version-control t)
 ;; Set the fonts
 ;; Set English font
-(set-face-attribute 'default nil :font "Menlo 18") ;; For Windows "Consolas 16"
+(set-face-attribute 'default nil :font "Source Han Mono SC 18")
 ;; Set Chinese font
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
         (set-fontset-font (frame-parameter nil 'font)
-         charset (font-spec :family "STFangSong"
-                            :size 22))) ;; For Windows "Fangsong" 24
-;; Set the background color
-(custom-set-faces
- '(default ((t (:background "#c7edcc")))))
+	 charset (font-spec :family "Source Han Mono SC"
+			    :size 18)))
 ;; Spell checker (Don't forget to install aspell)
 (setq-default ispell-program-name "/usr/local/bin/aspell")
 
