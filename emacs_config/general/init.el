@@ -25,13 +25,7 @@
  kept-old-versions 20
  version-control t)
 ;; Set the fonts
-;; Set English font
 (set-frame-font "Maple Mono NF CN-16" nil t)
-;; Set Chinese font
-(mapc
- (lambda (charset)
-   (set-fontset-font t charset (font-spec :family "Maple Mono NF CN" :size 16)))
- '(kana han symbol cjk-misc bopomofo))
 ;; Spell checker (Don't forget to install aspell)
 (setq-default ispell-program-name "/usr/local/bin/aspell")
 
