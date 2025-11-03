@@ -27,6 +27,7 @@ For font issues, please check the following links, and please download those "st
 - wakatime
 - ssh-related
 - Rainbow CSV
+- Edit CSV
 - Python-related
 ## Wakatime
 ### Tips
