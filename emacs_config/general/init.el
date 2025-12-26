@@ -11,9 +11,16 @@
 ;; Display running info of the computer
 (display-battery-mode t)
 (display-time-mode t)
+;; Splash image
 (defun always-use-fancy-splash-screens-p () 1)
 (defalias 'use-fancy-splash-screens-p 'always-use-fancy-splash-screens-p)
-(setq fancy-startup-text '(((lambda() "write down anything you like"))))
+(setq fancy-startup-text
+      `(((lambda ()
+           (let* ((lines '("Line A"
+                           "Line B"
+                           "Line C"))
+                  (choice (nth (random (length lines)) lines)))
+             (concat choice "\n"))))))
 (setq fancy-splash-image (expand-file-name "image.png"))
 ;; Set the behavior on version control
 (setq
@@ -37,32 +44,21 @@
 (package-initialize)
 
 ;; Step 3: Install pakcages and add some commands
-(custom-set-variables
- '(wakatime-python-bin "C:/Python27/python.exe")
- '(wakatime-cli-path "/wakatime/cli.py"))
-
-;; wakatime
-(global-wakatime-mode t)
-;; Don't forget to go back to the line above, and also write config file under emacs's ~ (windows) or home/username (unix-like)
-
-;; neotree
-
-;; tabbar
-(tabbar-mode t)
-
 ;; company
 (add-hook 'after-init-hook 'global-company-mode)
+
+;; minimap
+(minimap-mode)
+(add-to-list 'minimap-major-modes 'text-mode)
+(setq minimap-window-location 'right)
+
+;; neotree
 
 ;; org-mode
 (add-hook 'org-mode-hook 'flyspell-buffer)
 (add-hook 'org-mode-hook 'turn-on-flyspell)
 (setq org-log-done 'time)
 (setq org-export-with-sub-superscripts nil)
-
-;; minimap-mode
-(minimap-mode)
-(add-to-list 'minimap-major-modes 'text-mode)
-(setq minimap-window-location 'right)
 
 ;; solarized-theme
 (setq solarized-use-variable-pitch nil) ;; Don't change the font for some headings and titles
@@ -72,3 +68,9 @@
 (setq solarized-height-plus-3 1.0)
 (setq solarized-height-plus-4 1.0) ;; Avoid all font-size changes
 (load-theme 'solarized-light t)
+
+;; tabbar
+(tabbar-mode t)
+
+;; wakatime
+(global-wakatime-mode t)

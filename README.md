@@ -21,17 +21,19 @@ For font issues, please check the following links, and please download those "st
 - solarized-theme
 ## Visual Studio Code
 ### Plugins
-- Jupyter-related
+- From MS
+    - Python-related
+    - Jupyter-related
+    - ssh-related
 - LaTex Workshop
 - Spell Right
 - wakatime
-- ssh-related
-- Rainbow CSV
-- Edit CSV
-- Python-related
+- CSV (combination of edit csv and rainbow csv)
+- GitLens
 ## Wakatime
 ### Tips
-Create a file with the name of `.wakatime-project` and add a name to track the project.
+- Create the config file under `~/.wakatime.cfg`
+- Create a file with the name of `.wakatime-project` and add a name to track the project.
 ## Obsidian
 ### Plugins
 - Excalidraw
