@@ -16,9 +16,9 @@
 (defalias 'use-fancy-splash-screens-p 'always-use-fancy-splash-screens-p)
 (setq fancy-startup-text
       `(((lambda ()
-           (let* ((lines '("Line A"
-                           "Line B"
-                           "Line C"))
+	   (let* ((lines (with-temp-buffer
+                           (insert-file-contents "~/.emacs.d/startup_lines.txt")
+                           (split-string (buffer-string) "\n" t)))
                   (choice (nth (random (length lines)) lines)))
              (concat choice "\n"))))))
 (setq fancy-splash-image (expand-file-name "image.png"))
