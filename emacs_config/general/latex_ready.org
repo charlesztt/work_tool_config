@@ -1,0 +1,5 @@
+#+TITLE: Title
+#+AUTHOR: Author name
+#+OPTIONS: toc:nil
+#+LATEX_HEADER: \usepackage{fullpage}
+#+LATEX_HEADER: \usepackage{amssymb}

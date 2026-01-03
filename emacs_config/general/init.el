@@ -59,6 +59,10 @@
 (add-hook 'org-mode-hook 'turn-on-flyspell)
 (setq org-log-done 'time)
 (setq org-export-with-sub-superscripts nil)
+(setq org-latex-compiler "xelatex") ; Use XeLaTeX for Unicode support
+(setq org-latex-pdf-process
+     '("xelatex -interaction nonstopmode %f"
+       "xelatex -interaction nonstopmode %f")) ; Compile twice for references
 
 ;; solarized-theme
 (setq solarized-use-variable-pitch nil) ;; Don't change the font for some headings and titles
