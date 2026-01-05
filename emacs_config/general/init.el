@@ -44,6 +44,19 @@
 (package-initialize)
 
 ;; Step 3: Install pakcages and add some commands
+;; auctex
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+;; (add-hook 'LaTeX-mode-hook 'flyspell-prog-mode)
+;; Windows: SumatraPDF
+;; MacOS: Skim
+;; Linux: 
+(setq TeX-engine 'xetex)
+(setq TeX-PDF-mode t)
+(setq TeX-view-program-selection
+      '((output-pdf "Skim")))
+(setq TeX-view-program-list
+      '(("Skim" "/Applications/Skim.app/Contents/SharedSupport/displayline -g %n %o %b")))
+
 ;; company
 (add-hook 'after-init-hook 'global-company-mode)
 
