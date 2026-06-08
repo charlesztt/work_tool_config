@@ -19,6 +19,7 @@ For font issues, please check the following links, and please download those "st
 - tabbar
 - neotree
 - solarized-theme
+- auctex
 ## Visual Studio Code
 ### Plugins
 - From MS
