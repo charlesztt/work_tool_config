@@ -1,4 +1,4 @@
-# Editor Plug-in Record
+# Record of Tools for Working Environment
 This is a note-like repo for me to quickly set up editors or other software as soon as I start with a new environment
 ## General
 ### Font
