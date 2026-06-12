@@ -35,6 +35,7 @@ For font issues, please check the following links, and please download those "st
 ### Tips
 - Create the config file under `~/.wakatime.cfg`
 - Create a file with the name of `.wakatime-project` and add a name to track the project.
+- You can check [this link](https://github.com/wakatime/wakatime-cli/blob/develop/USAGE.md#ini-config-file) for more information.
 ## Obsidian
 ### Plugins
 - Excalidraw
