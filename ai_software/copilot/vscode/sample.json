@@ -1,0 +1,18 @@
+[
+	{
+		"name": "Azure-WestUS",
+		"vendor": "azure",
+		"apiKey": "${input:chat.lm.secret.-c2fb4ec}",
+		"models": [
+			{
+				"id": "<maybe_you_have_some_prefix>-gpt-5.5-<maybe_you_have_some_appendix>",
+				"name": "<maybe_you_have_some_prefix>-gpt-5.5-<maybe_you_have_some_appendix>",
+				"url": "https://xxxxx.cognitiveservices.azure.com/openai/responses?api-version=2025-04-01-preview",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 922000,
+				"maxOutputTokens": 128000
+			}
+		]
+	}
+]

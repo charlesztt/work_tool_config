@@ -1,0 +1,17 @@
+model = "<maybe_you_have_some_prefix>-gpt-5.5-<maybe_you_have_some_appendix>"
+model_provider = "azure_xxx"
+model_reasoning_effort = "medium"
+model_catalog_json = "~/.codex/model-catalogs/<maybe_you_have_some_prefix>-gpt-5.5-<maybe_you_have_some_appendix>".json"
+# For model catalog, you can check what is in models_cache.json and just use them.
+
+[model_providers.azure_xxx]
+name = "Azure OpenAI"
+base_url = "https://xxx.services.ai.azure.com/openai/v1"
+env_key = "AZURE_OPENAI_API_KEY_XXX"
+wire_api = "responses"
+
+[model_providers.azure_yyy]
+name = "Azure OpenAI"
+base_url = "https://yyy.cognitiveservices.azure.com/openai/v1"
+env_key = "AZURE_OPENAI_API_KEY_YYY"
+wire_api = "responses"

@@ -1,0 +1,13 @@
+# You need to provide the API keys
+export AZURE_OPENAI_API_KEY_X="xxx"
+export AZURE_OPENAI_API_KEY_Y="yyy"
+
+# Then provide the following information
+export CLAUDE_CODE_USE_FOUNDRY=1
+export ANTHROPIC_FOUNDRY_API_KEY=$AZURE_OPENAI_API_KEY_Y
+export ANTHROPIC_FOUNDRY_BASE_URL=https://yyy.services.ai.azure.com/anthropic
+export ANTHROPIC_DEFAULT_OPUS_MODEL='<maybe_you_have_some_prefix>-claude-opus-4-8-<maybe_you_have_some_appendix>'
+export ANTHROPIC_DEFAULT_SONNET_MODEL='<maybe_you_have_some_prefix>-azure-claude-sonnet-4-6-<maybe_you_have_some_appendix>'
+export ANTHROPIC_DEFAULT_HAIKU_MODEL='<maybe_you_have_some_prefix>-azure-claude-haiku-4-5-<maybe_you_have_some_appendix>'
+
+# Running copilot 
